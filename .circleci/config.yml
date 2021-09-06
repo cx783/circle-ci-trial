@@ -2,12 +2,10 @@
 version: 2.1
 # Use a package of configuration called an orb.
 orbs:
-  node: circleci/node@1.1
+  node: circleci/node@4.7.0
 jobs:
   build:
-    executor:
-      name: node/default
-      tag: '10.4'
+    executor: node/default
     steps:
       - checkout
       - node/with-cache:
