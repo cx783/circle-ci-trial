@@ -23,6 +23,6 @@ jobs:
 workflows:
   version: 2
   one_ang_two: # This is the name of workflow
-    job:
+    jobs:
       - one
       - two
